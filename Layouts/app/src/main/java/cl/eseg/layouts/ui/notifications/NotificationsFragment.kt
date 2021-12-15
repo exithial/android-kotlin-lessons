@@ -31,7 +31,7 @@ class NotificationsFragment : Fragment() {
         _binding = FragmentConstraintBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textNotifications
+        val textView: TextView = binding.textConstraint
         notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
