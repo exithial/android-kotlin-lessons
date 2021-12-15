@@ -9,12 +9,12 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import cl.eseg.layouts.R
-import cl.eseg.layouts.databinding.FragmentDashboardBinding
+import cl.eseg.layouts.databinding.FragmentFrameBinding
 
 class DashboardFragment : Fragment() {
 
     private lateinit var dashboardViewModel: DashboardViewModel
-    private var _binding: FragmentDashboardBinding? = null
+    private var _binding: FragmentFrameBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -28,7 +28,7 @@ class DashboardFragment : Fragment() {
         dashboardViewModel =
             ViewModelProvider(this).get(DashboardViewModel::class.java)
 
-        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
+        _binding = FragmentFrameBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textDashboard

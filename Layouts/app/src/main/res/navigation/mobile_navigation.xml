@@ -8,14 +8,14 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="cl.eseg.layouts.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="@string/title_linear"
         tools:layout="@layout/fragment_linear" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="cl.eseg.layouts.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:label="@string/title_frame"
+        tools:layout="@layout/fragment_frame" />
 
     <fragment
         android:id="@+id/navigation_notifications"
